@@ -1,0 +1,17 @@
+﻿
+
+@model Product
+
+
+
+
+<div class="product-card"   >
+    <img src="@Model.ImageURL" alt="Məhsul Şəkli">
+    <h3>@Model.Name</h3>
+    <p>@Model.Description</p>
+    <div class="price">@Model.Price</div>
+    <a asp-controller="Product" asp-action="Details" asp-route-id="@Model.ID"><button>View detail</button></a>
+</div>
+
+
+
